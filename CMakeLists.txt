@@ -10,7 +10,7 @@ set(Headers
 )
 
 set(Sources 
-    src/temp.cpp
+    src/Log.cpp
 )
 
 add_library(${This} STATIC ${Headers} ${Sources})

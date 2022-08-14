@@ -25,7 +25,7 @@ namespace byteofsin::logging {
             // }
 
             // Access
-            virtual iLogger& operator << (severity inputSeverity) = 0;
+            virtual iLogger& operator << (Severity inputSeverity) = 0;
             virtual iLogger& operator << (std::string const& message) = 0;
             // virtual iLogger& operator << () = 0; make work with text stream/abstract string
 

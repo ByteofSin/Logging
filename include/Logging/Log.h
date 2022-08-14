@@ -20,7 +20,7 @@ namespace byteofsin::logging {
                 logs.push_back(logWrapper);
             }
 
-            Log& operator << (severity inputSeverity) {
+            Log& operator << (Severity inputSeverity) {
                 for(std::reference_wrapper<iLogger> log : logs){
                     log.get() << inputSeverity;
                 }
@@ -59,3 +59,7 @@ namespace byteofsin::logging {
             std::vector <std::reference_wrapper<iLogger>> logs;
     };
 };
+
+extern byteofsin::logging::Log Bytelog;
+#define Severity byteofsin::logging::Severity
+#define endLine byteofsin::logging::endl

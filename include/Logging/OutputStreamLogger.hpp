@@ -13,7 +13,7 @@ namespace byteofsin::logging {
             OutputStreamLogger(std::basic_ostream<CharT, Traits> & outputStream) : Stream{outputStream} { 
             };
 
-            iLogger& operator << (severity inputSeverity) override { 
+            iLogger& operator << (Severity inputSeverity) override { 
                 Stream << SeverityToString(inputSeverity);
                 return *this;
             }
