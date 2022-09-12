@@ -20,4 +20,4 @@ set_target_properties(${This} PROPERTIES
     LINKER_LANGUAGE CXX
 )
 
-target_include_directories(${This} PUBLIC Include)
+target_include_directories(${This} PUBLIC include)
